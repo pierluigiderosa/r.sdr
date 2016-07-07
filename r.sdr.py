@@ -404,6 +404,9 @@ def main():
     # Computing Connectivity index
     ic_ar = numpy.log10(D_up_ar / D_down_ar)
 
+    SDRmax = 0.8;IC0=0.5;k=1
+    SDRmap = SDRmax / (1+math.exp((IC0-ic_ar/k)))
+
 
 
 
